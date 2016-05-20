@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sg.myproject" >
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivityBarActivity"
+            android:label="MainActivity" >
+        </activity>
+        <activity
+            android:name=".Handler.MyHandler"
+            android:label="Handler" >
+        </activity>
+        <activity
+            android:name="com.example.dynamic.contract.ContractActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:label="@string/title_activity_contract" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

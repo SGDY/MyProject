@@ -1,0 +1,73 @@
+{
+    "message": "获取合约信息成功",
+    "result": {
+        "contractFieldRopList": [
+            {
+                "id": 5,
+                "template_fk": null,
+                "field_key": "contract_jzclfs_hs",
+                "field_value": "乙方在到期后最近的一个计息派发日，将甲方出借资金全部本金及未派发利息一起汇转至甲方指定的回收专用账户（甲方知悉并认可银行系统存在的汇款迟延情形）",
+                "name": "身份证",
+                "field_type": "checkbox",
+                "business_fk": null,
+                "field_group": "clfs",
+                "orderby": 5,
+                "isBusiness_field": 0,
+                "result": null
+            },
+            {
+                "id": 6,
+                "template_fk": null,
+                "field_key": "contract_jzclfs_zqzr",
+                "field_value": "进行债权转让处理，将该笔资金对应的债权资产(包括收益部分)全部转让给乙方为其寻找到的债权受让人，转让对价以及支付日期按照本协议书的有关规定进行处理",
+                "name": "护照",
+                "field_type": "checkbox",
+                "business_fk": null,
+                "field_group": "clfs",
+                "orderby": 6,
+                "isBusiness_field": 0,
+                "result": null
+            },
+            {
+                "id": 7,
+                "template_fk": null,
+                "field_key": "contract_jzclfs_zxcj",
+                "field_value": "自动继续出借，将该笔资金对应的债权资产(包括利息收益部分且只以万为单位计数的整数部分)等转为",
+                "name": "结婚证",
+                "field_type": "checkbox",
+                "business_fk": null,
+                "field_group": "clfs",
+                "orderby": 7,
+                "isBusiness_field": 0,
+                "result": null
+            },
+            {
+                "id": 8,
+                "template_fk": null,
+                "field_key": "contract_jzclfs_zxcj_qt",
+                "field_value": null,
+                "name": "甲方",
+                "field_type": "input",
+                "business_fk": null,
+                "field_group": "clfs",
+                "orderby": 8,
+                "isBusiness_field": 0,
+                "result": null
+            },
+            {
+                "id": 9,
+                "template_fk": null,
+                "field_key": "contract_jzclfs_zxcj_yi",
+                "field_value": null,
+                "name": "乙方",
+                "field_type": "input",
+                "business_fk": null,
+                "field_group": "clfs",
+                "orderby": 9,
+                "isBusiness_field": 0,
+                "result": null
+            }
+        ]
+    },
+    "status": "S"
+}

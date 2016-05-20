@@ -1,0 +1,50 @@
+{
+    "message": "获取合约信息成功",
+    "result": {
+        "contractFieldRopList": [
+            {
+                "id": 9,
+                "name": "如果甲方在所出借资金满期之日(或之前)未以书面形式明确向乙方提出不再继续出借本人资金或转让名下债权，则对于期限届满之后的资金(包括甲方本金和利息收益)处理，甲方选择下列方式之一并授权乙方进行处理",
+                "field_type": "radio",
+                "field_group": "0",
+                "orderby": 5,
+                "result": null,
+                "children": [
+                    {
+                        "id": 5,
+                        "name": "乙方在到期后最近的一个计息派发日，将甲方出借资金全部本金及未派发利息一起汇转至甲方指定的回收专用账户（甲方知悉并认可银行系统存在的汇款迟延情形）",
+                        "field_type": "radio",
+                        "field_group": "1",
+                        "orderby": 5,
+                        "result": "0"
+                    },
+                    {
+                        "id": 6,
+                        "name": "进行债权转让处理，将该笔资金对应的债权资产(包括收益部分)全部转让给乙方为其寻找到的债权受让人，转让对价以及支付日期按照本协议书的有关规定进行处理",
+                        "field_type": "radio",
+                        "field_group": "2",
+                        "orderby": 6,
+                        "result": "0"
+                    },
+                    {
+                        "id": 7,
+                        "name": "自动继续出借，将该笔资金对应的债权资产(包括利息收益部分且只以万为单位计数的整数部分)等转为",
+                        "field_type": "radio",
+                        "field_group": "3",
+                        "orderby": 7,
+                        "result": "1"
+                    },
+                    {
+                        "id": 8,
+                        "name": null,
+                        "field_type": "input",
+                        "field_group": "3",
+                        "orderby": 8,
+                        "result": null
+                    }
+                ]
+            }
+        ]
+    },
+    "status": "S"
+}

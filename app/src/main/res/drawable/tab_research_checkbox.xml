@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/ph_select_bigger" android:state_checked="true"/>
+    <item android:drawable="@drawable/research_unselected_ck" android:state_checked="false"/>
+
+</selector>
