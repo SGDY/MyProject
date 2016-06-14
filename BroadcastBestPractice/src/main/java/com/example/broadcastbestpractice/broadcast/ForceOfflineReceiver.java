@@ -29,6 +29,7 @@ public class ForceOfflineReceiver extends BroadcastReceiver {
             context.startActivity(intent1);
         });
         AlertDialog dialog = builder.create();
+        //需要设置dialog的类型，不然无法在广播接收器中弹出
         dialog.getWindow().setType(WindowManager.LayoutParams.TYPE_SYSTEM_ALERT);
         dialog.show();
     }

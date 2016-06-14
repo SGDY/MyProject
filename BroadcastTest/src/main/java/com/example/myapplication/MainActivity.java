@@ -29,10 +29,13 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //注册网络变化的广播
         intentFilter = new IntentFilter();
         intentFilter.addAction("android.net.conn.CONNECTIVITY_CHANGE");
         networkChangeReceiver = new NetworkChangeReceiver();
         registerReceiver(networkChangeReceiver, intentFilter);
+        //注册本地广播
+        localBroadcastManager = LocalBroadcastManager.getInstance(this);
         intentFilter = new IntentFilter();
         intentFilter.addAction("com.example.myapplication.LOCAL_BROADCAST");
         localReceiver = new LocalReceiver();
@@ -40,17 +43,17 @@ public class MainActivity extends ActionBarActivity {
 
         Button button = (Button) findViewById(R.id.button);
         button.setOnClickListener(v -> {
+            //发送有序广播
             Intent intent = new Intent("com.example.myapplication.broadcast.MY_BROADCAST");
             sendBroadcast(intent);
             sendOrderedBroadcast(intent, null);
-
+            //发送本地广播
             Intent intent1 = new Intent("com.example.myapplication.LOCAL_BROADCAST");
             localBroadcastManager.sendBroadcast(intent1);
         });
 
-        localBroadcastManager = LocalBroadcastManager.getInstance(this);
     }
-
+    //---接受网络变化的广播－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
     class NetworkChangeReceiver extends BroadcastReceiver {
         @Override
         public void onReceive(Context context, Intent intent) {
@@ -63,6 +66,7 @@ public class MainActivity extends ActionBarActivity {
             }
         }
     }
+    //---本地广播接收器--------------------------------------------------------------------------------
     class LocalReceiver extends BroadcastReceiver{
         @Override
         public void onReceive(Context context, Intent intent) {
