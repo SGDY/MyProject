@@ -57,7 +57,7 @@ public class MyService extends Service {
         builder.setContentIntent(contentIntent);
         Notification notification = builder.build();
         notification.flags = Notification.FLAG_ONGOING_EVENT;//表明有程序运行，不可由用户清除
-        startForeground(1,notification);
+        startForeground(1,notification);//设置前台服务
 
     }
 
