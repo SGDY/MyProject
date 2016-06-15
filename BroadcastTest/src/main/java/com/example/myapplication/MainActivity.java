@@ -53,7 +53,7 @@ public class MainActivity extends ActionBarActivity {
         });
 
     }
-    //---接受网络变化的广播－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+    //---接受网络变化的广播--------------------------------------------------------------------------
     class NetworkChangeReceiver extends BroadcastReceiver {
         @Override
         public void onReceive(Context context, Intent intent) {
@@ -66,7 +66,7 @@ public class MainActivity extends ActionBarActivity {
             }
         }
     }
-    //---本地广播接收器--------------------------------------------------------------------------------
+    //---本地广播接收器------------------------------------------------------------------------------
     class LocalReceiver extends BroadcastReceiver{
         @Override
         public void onReceive(Context context, Intent intent) {

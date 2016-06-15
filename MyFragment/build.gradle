@@ -1,22 +1,4 @@
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-
-    dependencies {
-        classpath 'me.tatarka:gradle-retrolambda:3.2.2'
-    }
-}
-
-
-apply plugin: 'me.tatarka.retrolambda'
 apply plugin: 'com.android.application'
-
-retrolambda {
-    jdk System.getenv("JAVA8_HOME")
-    oldJdk System.getenv("JAVA7_HOME")
-    javaVersion JavaVersion.VERSION_1_7
-}
 
 android {
     compileSdkVersion 21
@@ -45,5 +27,4 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:21.0.3'
-    retrolambdaConfig 'net.orfjackal.retrolambda:retrolambda:2.0.5'
 }

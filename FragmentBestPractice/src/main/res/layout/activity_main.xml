@@ -9,7 +9,8 @@
         android:layout_height="match_parent"
         android:id="@+id/news_title_fragment"
         android:layout_weight="1"
-        android:name="com.example.myapplication.fragment.NewsTitleFragment" />
+        android:name="com.example.myapplication.fragment.NewsTitleFragment"
+        tools:layout="@layout/news_item" />
 
     <FrameLayout
         android:layout_width="0dp"
@@ -21,7 +22,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:name="com.example.myapplication.fragment.NewsContentFragment"
-            android:id="@+id/news_content_fragment" />
+            android:id="@+id/news_content_fragment"
+            tools:layout="@layout/news_content_frag" />
     </FrameLayout>
 
 </LinearLayout>

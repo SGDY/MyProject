@@ -1,28 +1,4 @@
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-
-    dependencies {
-        classpath 'me.tatarka:gradle-retrolambda:3.2.2'
-    }
-}
-
-// Required because retrolambda is on maven central
-repositories {
-    maven  {
-        url "http://repo1.maven.org/maven2"
-    }
-}
-
 apply plugin: 'com.android.application'
-apply plugin: 'me.tatarka.retrolambda'
-
-retrolambda {
-    jdk System.getenv("JAVA8_HOME")
-    oldJdk System.getenv("JAVA7_HOME")
-    javaVersion JavaVersion.VERSION_1_7
-}
 
 android {
     compileSdkVersion 21
@@ -52,5 +28,4 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.facebook.stetho:stetho:1.0.1'
     compile 'com.android.support:appcompat-v7:21.0.3'
-    retrolambdaConfig 'net.orfjackal.retrolambda:retrolambda:2.0.5'
 }
