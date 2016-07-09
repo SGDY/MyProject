@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sgdy.viewoperating.MainActivity">
+
+    <com.example.sgdy.viewoperating.view.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:titleText="3712"
+        app:titleTextSize="40sp"
+        app:viewTitleTextColor="#ff0000" />
+
+    <com.example.sgdy.viewoperating.view.CustomImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:image="@mipmap/ic_launcher"
+        app:imageScaleType="center"
+        app:titleText="Hello Android!"
+        app:titleTextSize="30sp"
+        app:viewTitleTextColor="#ff0000" />
+
+    <com.example.sgdy.viewoperating.view.CustomImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:image="@mipmap/ic_launcher"
+        app:imageScaleType="center"
+        app:titleText="Hello Android Coming!"
+        app:titleTextSize="20sp"
+        app:viewTitleTextColor="#00ff00" />
+
+    <com.example.sgdy.viewoperating.view.CustomImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:image="@mipmap/ic_launcher"
+        app:imageScaleType="center"
+        app:titleText="In!"
+        app:viewTitleTextColor="#ff0000" />
+
+    <com.example.sgdy.viewoperating.view.CircleView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:circleWidth="10dp"
+        app:firstColor="#00ff00"
+        app:secondColor="#ff0000"
+        app:speed="2" />
+
+    <com.example.sgdy.viewoperating.view.CustomVolumControlBar
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:firstColor="#ffff00"
+        app:secondColor="#00ff00"
+        app:circleWidth="16dp"
+        app:dotCount="12"
+        app:splitSize="35"
+        app:bg="@mipmap/ic_launcher"/>
+</LinearLayout>

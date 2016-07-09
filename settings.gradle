@@ -1,2 +1,2 @@
-include ':app', ':MyFragment', ':FragmentBestPractice', ':BroadcastTest', ':BroadcastBestPractice', ':ServiceTest', ':ServiceBestPractice', ':Aspect', ':imagepattern', ':databindingtest'
+include ':app', ':MyFragment', ':FragmentBestPractice', ':BroadcastTest', ':BroadcastBestPractice', ':ServiceTest', ':ServiceBestPractice', ':Aspect', ':imagepattern', ':databindingtest', ':viewoperating'
 include ':androidAspect'
