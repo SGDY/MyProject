@@ -1,6 +1,7 @@
 package com.example.sgdy.viewoperating.view;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -11,6 +12,7 @@ import android.util.TypedValue;
 import android.view.View;
 
 import com.example.sgdy.viewoperating.R;
+import com.example.sgdy.viewoperating.RecyclerActivity;
 
 import java.util.HashSet;
 import java.util.Random;
@@ -87,8 +89,9 @@ public class CustomTextView extends View {
         mPaint.getTextBounds(mTitleText, 0, mTitleText.length(), mBound);
 
         this.setOnClickListener(v -> {
-            mTitleText = randomText();
-            postInvalidate();
+            /*mTitleText = randomText();
+            postInvalidate();*/
+            context.startActivity(new Intent(context, RecyclerActivity.class));
         });
     }
 
