@@ -78,6 +78,7 @@ public class RecyclerActivity extends AppCompatActivity {
                 }, 2000);
             }
         });
+
         final LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
