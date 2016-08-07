@@ -24,11 +24,11 @@ public class MaskActivity extends Activity {
         super.onCreate(savedInstanceState);
         ImageView iv = new ImageView(this);
         iv.setScaleType(ImageView.ScaleType.CENTER);
-        
+
         //Create and load images (immutable, typically)
         Bitmap source = BitmapFactory.decodeResource(getResources(), R.drawable.dog);
         Bitmap mask = BitmapFactory.decodeResource(getResources(), R.drawable.triangle);
-        
+
         //Create a *mutable* location, and a canvas to draw into it
         final Bitmap result = Bitmap.createBitmap(source.getWidth(), source.getHeight(), Config.ARGB_8888);
         Canvas canvas = new Canvas(result);
@@ -39,7 +39,7 @@ public class MaskActivity extends Activity {
         paint.setXfermode(new PorterDuffXfermode(Mode.SRC_IN));
         canvas.drawBitmap(source, 0, 0, paint);
         paint.setXfermode(null);
-        
+
         iv.setImageBitmap(result);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             //Elevate the view to make a visible shadow

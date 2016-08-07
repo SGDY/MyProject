@@ -12,7 +12,6 @@ public class ShaderActivity extends Activity {
         super.onCreate(savedInstanceState);
         RoundedCornerImageView iv = new RoundedCornerImageView(this);
         Bitmap source = BitmapFactory.decodeResource(getResources(), R.drawable.dog);
-        
         iv.setImage(source);
         setContentView(iv);
     }
