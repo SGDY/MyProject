@@ -1,2 +1,2 @@
-include ':app', ':MyFragment', ':FragmentBestPractice', ':BroadcastTest', ':BroadcastBestPractice', ':ServiceTest', ':ServiceBestPractice', ':Aspect', ':imagepattern', ':databindingtest', ':viewoperating', ':superswiperefreshlayout', ':customview1', ':imagemask'
+include ':app', ':MyFragment', ':FragmentBestPractice', ':BroadcastTest', ':BroadcastBestPractice', ':ServiceTest', ':ServiceBestPractice', ':Aspect', ':imagepattern', ':databindingtest', ':viewoperating', ':superswiperefreshlayout', ':customview1', ':imagemask', ':emoji'
 include ':androidAspect'
