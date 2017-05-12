@@ -16,7 +16,7 @@ apply plugin: 'android-aspectj'
 
 android {
     compileSdkVersion 17
-    buildToolsVersion "21.1.2"
+    buildToolsVersion '25.0.0'
 
     defaultConfig {
         applicationId "com.sg.myapplication"

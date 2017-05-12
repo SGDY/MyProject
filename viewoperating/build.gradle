@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    buildToolsVersion '25.0.0'
 
     dataBinding {
         enabled = true
@@ -15,7 +15,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.sgdy.viewoperating"
-        minSdkVersion 8
+        minSdkVersion 9
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
